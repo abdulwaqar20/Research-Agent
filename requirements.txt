@@ -1,0 +1,4 @@
+groq
+ddgs
+trafilatura
+python-dotenv

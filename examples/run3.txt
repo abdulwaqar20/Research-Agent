@@ -1,0 +1,26 @@
+[1/6] web_search({'query': 'CRISPR gene editing mechanism how does it work'}) -> OK
+[2/6] fetch_page({'url': 'https://en.wikipedia.org/wiki/CRISPR_gene_editing'}) -> OK
+[3/6] fetch_page({'url': 'https://en.wikipedia.org/wiki/CRISPR_gene_editing'}) -> FAIL
+    error: already fetched this URL — reuse the earlier content instead of refetching
+[4/6] summarise({'text': 'CRISPR gene editing (/ˈkrɪspər/; pronounced like "crisper"; an abbreviation for "clustered regularly interspaced short palindromic repeats") is a genetic engineering technique in molecular biology by which the genomes of living organisms may be modified. It is based on a simplified version of the bacterial CRISPR-Cas9 antiviral defense system. By delivering the Cas9 nuclease complexed with a synthetic guide RNA (gRNA) into a cell, the cell\'s genome can be cut at a desired location, allowing existing genes to be removed or new ones added in vivo ("within the living").[1]\nWorking like genetic scissors, the Cas9 nuclease opens both strands of the targeted DNA sequence to introduce the modification by one of two methods. Knock-in mutations, facilitated via homology-directed repair (HDR), are the traditional pathway of targeted genomic editing approaches.[1] This allows for...', 'url': 'https://en.wikipedia.org/wiki/CRISPR_gene_editing', 'question': 'How does CRISPR gene editing work?'}) -> OK
+
+--- FINAL ANSWER ---
+CRISPR gene editing works by turning a bacterial immune system into a programmable “molecular scissors” that can cut DNA at any chosen location and let the cell’s own repair machinery rewrite the genome.
+
+**Key steps**
+
+1. **Design of a guide RNA (gRNA)** – A short synthetic RNA is created that is complementary to the exact DNA sequence the researcher wants to edit. The gRNA forms a complex with the Cas9 protein and directs it to that target site【S1】.  
+2. **Cas9 binding and cleavage** – The Cas9‑gRNA complex scans the genome, binds where the gRNA matches, and the Cas9 nuclease opens both strands of DNA, creating a double‑strand break (DSB) at the precise location【S1】.  
+3. **Cellular DNA‑repair pathways** – Once the DSB is made, the cell repairs it by one of two natural mechanisms:  
+   * **Non‑homologous end joining (NHEJ)** – An error‑prone process that often inserts or deletes a few nucleotides, typically disrupting the target gene.  
+   * **Homology‑directed repair (HDR)** – A high‑fidelity pathway that can use an externally supplied DNA template to insert, replace, or correct specific sequences (knock‑in).  
+4. **Resulting genome edit** – By exploiting NHEJ or HDR, scientists can delete, deactivate, or precisely modify genes in living cells, enabling targeted genetic engineering for research, medicine, agriculture, and more【S1】.
+
+**In short:** A custom gRNA guides Cas9 to a chosen DNA stretch, Cas9 cuts the DNA, and the cell’s repair systems—either the sloppy NHEJ or the precise HDR—rewrite the genome according to the researcher’s intent.
+
+**Sources**
+
+- [S1] Wikipedia – “CRISPR gene editing” (https://en.wikipedia.org/wiki/CRISPR_gene_editing)
+
+--- SOURCES TRACKED ---
+S1: https://en.wikipedia.org/wiki/CRISPR_gene_editing
